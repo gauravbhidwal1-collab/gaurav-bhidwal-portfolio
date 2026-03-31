@@ -8,8 +8,8 @@ export function Footer() {
         <p>
           © {year} {PERSON.name}. All rights reserved.
         </p>
-        <p className="text-zinc-600">
-          Built with React, Vite, Tailwind CSS & Framer Motion
+        <p className="text-zinc-600 italic">
+          Focused on building scalable systems, efficient APIs, and production-ready solutions.
         </p>
       </div>
     </footer>
