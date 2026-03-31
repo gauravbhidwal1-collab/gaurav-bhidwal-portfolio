@@ -1,13 +1,12 @@
-<<<<<<< HEAD
-# Gaurav Singh Bhidwal - Portfolio
+# Gaurav Singh Bhidwal — Portfolio
 
-Modern, recruiter-friendly personal portfolio built with React (Vite) and Tailwind CSS.
+Recruiter-focused personal site: React (Vite), Tailwind CSS, Framer Motion. Content lives in `src/data/portfolio.js`.
 
-## Tech Stack
+## Tech stack
 
-- React (Vite)
-- Tailwind CSS
-- JavaScript
+- React 19 · Vite 7
+- Tailwind CSS v4 (`@tailwindcss/vite`)
+- Framer Motion
 
 ## Setup
 
@@ -15,43 +14,51 @@ Modern, recruiter-friendly personal portfolio built with React (Vite) and Tailwi
 npm install
 ```
 
-## Run Locally
+## Run locally
 
 ```bash
 npm run dev
 ```
 
-## Build for Production
+Preview production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Netlify Deployment
+## Lint
 
-1. Push this repository to GitHub.
-2. In Netlify, select **Add new site -> Import from Git**.
-3. Choose your repository.
-4. Set build command to `npm run build`.
-5. Set publish directory to `dist`.
-6. Deploy.
+```bash
+npm run lint
+```
 
-The contact form uses Netlify Forms and works automatically after deployment.
+## Netlify
 
-## Customize Content
+Repo includes `netlify.toml`:
 
-- Update contact links and project URLs in `src/App.jsx`.
-- Update the resume PDF at `public/resume.pdf` (and optional `public/resume.html`).
-- Adjust SEO meta tags in `index.html`.
-- Update the favicon in `public/favicon.svg` if desired.
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
 
-## Accessibility & Performance Notes
+In [Netlify](https://app.netlify.com): **Add site → Import from Git** → pick this repo → deploy (settings usually auto-detect).
 
-- Semantic HTML sections and accessible form labels.
-- Minimal animations and fast-loading assets.
-- A `noscript` fallback in `index.html` keeps key content readable when JavaScript is disabled.
-=======
-# gaurav-bhidwal-portfolio
-gaurav-bhidwal-portfolio
->>>>>>> 45ef8bfc2c0b26d0f2395ad8b6eeac73e3349226
+## Customize
+
+| What | Where |
+|------|--------|
+| Copy, links, email, projects | `src/data/portfolio.js` |
+| Resume (`/resume.pdf`) | add file under `public/resume.pdf` |
+| Meta / title | `index.html` |
+| Favicon | `public/favicon.svg` |
+
+## Profile image (optional)
+
+```bash
+npm run optimize-profile -- "path/to/photo.jpg"
+```
+
+Writes optimized `src/assets/profile.png` (requires `sharp` dev dependency).
+
+## License
+
+Private / personal use unless you add a license.
