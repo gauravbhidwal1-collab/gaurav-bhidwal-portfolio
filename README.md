@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gaurav Singh Bhidwal - Portfolio
 
 Modern, recruiter-friendly personal portfolio built with React (Vite) and Tailwind CSS.
@@ -50,3 +51,7 @@ The contact form uses Netlify Forms and works automatically after deployment.
 - Semantic HTML sections and accessible form labels.
 - Minimal animations and fast-loading assets.
 - A `noscript` fallback in `index.html` keeps key content readable when JavaScript is disabled.
+=======
+# gaurav-bhidwal-portfolio
+gaurav-bhidwal-portfolio
+>>>>>>> 45ef8bfc2c0b26d0f2395ad8b6eeac73e3349226
